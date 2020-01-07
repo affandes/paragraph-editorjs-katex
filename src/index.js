@@ -1,0 +1,1 @@
+module.exports = require('./paragraph-katex-editor').default;

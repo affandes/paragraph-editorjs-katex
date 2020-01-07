@@ -1,0 +1,43 @@
+{
+  "name": "paragraph-editorjs-katex",
+  "version": "1.0.0",
+  "description": "EditorJs plugin for paragraph with math symbol by KateX",
+  "main": "dist/paragraph-katex-editor.js",
+  "repository": "https://github.com/affandes/paragraph-editorjs-katex.git",
+  "author": "Affandes <affandes@uin-suska.ac.id>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@editorjs/editorjs": "^2.16.1",
+    "katex": "^0.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.1",
+    "jest": "^24.9.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "keywords": [
+    "paragraph",
+    "editorjs",
+    "katex",
+    "inline",
+    "plugin"
+  ],
+  "files": [
+    "dist",
+    "*.md"
+  ],
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack --mode=development ",
+    "build": "webpack --mode=production --output-filename=paragraph-katex-editor.min.js",
+    "start": "webpack-dev-server --open"
+  }
+}
